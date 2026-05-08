@@ -1,73 +1,84 @@
-# React + TypeScript + Vite
+# 🎬 Movies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web de películas desarrollada con tecnologías modernas para practicar el desarrollo frontend y el consumo de datos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Descripción
 
-## React Compiler
+Movies es un proyecto donde puedes visualizar información de películas, organizado como una aplicación web interactiva.  
+El objetivo es practicar el uso de herramientas modernas como React y TypeScript, además de manejo de componentes y estilos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- Vite
+- CSS
+- Node.js
+- ESLint
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📁 Estructura del proyecto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+movies/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── index.html
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Instalación y uso
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 1. Clonar el repositorio
+git clone https://github.com/johan101039/Movies.git
+
+### 2. Entrar a la carpeta
+cd Movies
+
+### 3. Instalar dependencias
+npm install
+
+### 4. Ejecutar el proyecto
+npm run dev
+
+---
+
+## 🌐 Funcionalidades
+
+- Visualización de películas  
+- Interfaz moderna y responsive  
+- Estructura modular con componentes  
+- Proyecto listo para ampliación con APIs  
+
+---
+
+## 📌 Objetivo del proyecto
+
+Este proyecto fue creado con fines educativos para mejorar habilidades en:
+- Desarrollo frontend  
+- React + TypeScript  
+- Uso de Git y GitHub  
+
+---
+
+## 👨‍💻 Autor
+
+Johan Mendoza tapia
+
+---
+
+## 📄 Licencia
+
+Proyecto de uso educativo, libre para mejoras personales.
