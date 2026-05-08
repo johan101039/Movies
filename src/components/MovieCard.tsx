@@ -41,13 +41,12 @@ function MovieCard({
           onClick={handleFavorite}
           className="absolute top-3 right-3 text-3xl"
         >
-         <span
-  className={`${
-    liked ? "text-red-600" : "text-white"
-  } drop-shadow-[0_0_3px_black]`}
->
-  ♥
-</span>
+          <span
+            className={`${liked ? "text-red-600" : "text-white"
+              } drop-shadow-[0_0_3px_black]`}
+          >
+            ♥
+          </span>
         </button>
 
       </div>
